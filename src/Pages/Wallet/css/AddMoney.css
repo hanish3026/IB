@@ -1,0 +1,177 @@
+/* AddMoney Component Specific Styles */
+.preset-amounts {
+    margin: 15px 0;
+  }
+  
+  .preset-amount-btn {
+    padding: 6px 12px;
+    border: 1px solid var(--wallet-border);
+    background: white;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .preset-amount-btn:hover {
+    border-color: var(--wallet-primary);
+    background: rgba(58, 123, 213, 0.05);
+  }
+  
+  .preset-amount-btn.active {
+    background: var(--wallet-primary);
+    color: white;
+    border-color: var(--wallet-primary);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-methods {
+    margin-bottom: 20px;
+  }
+  
+  .payment-method-card {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid var(--wallet-border);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: white;
+  }
+  
+  .payment-method-card:hover {
+    border-color: var(--wallet-primary);
+    background: rgba(58, 123, 213, 0.05);
+  }
+  
+  .payment-method-card.selected {
+    border-color: var(--wallet-primary);
+    background: rgba(58, 123, 213, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-method-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--wallet-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: 12px;
+    flex-shrink: 0;
+  }
+  
+  .payment-method-details {
+    flex: 1;
+  }
+  
+  .payment-method-name {
+    font-weight: 500;
+    color: var(--wallet-text);
+  }
+  
+  .payment-method-number {
+    font-size: 0.8rem;
+    color: var(--wallet-text-light);
+  }
+  
+  .payment-method-radio {
+    margin-left: 10px;
+  }
+  
+  .payment-method-card.add-new {
+    border-style: dashed;
+  }
+  
+  .payment-method-card.add-new .payment-method-icon {
+    background: var(--wallet-text-light);
+  }
+  
+  .add-new-card {
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  .transaction-details {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+  }
+  
+  .transaction-details h6 {
+    color: var(--wallet-text);
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .success-screen {
+    text-align: center;
+    padding: 30px 15px;
+  }
+  
+  .success-animation {
+    animation: scale-up 0.4s ease-out;
+  }
+  
+  .spinner-border-sm {
+    width: 1rem;
+    height: 1rem;
+    border-width: 0.2em;
+  }
+  
+  /* Animation Keyframes */
+  @keyframes scale-up {
+    0% { transform: scale(0); opacity: 0; }
+    70% { transform: scale(1.2); }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .payment-method-card {
+      padding: 10px;
+    }
+    
+    .payment-method-icon {
+      width: 35px;
+      height: 35px;
+      font-size: 0.9rem;
+    }
+    
+    .preset-amount-btn {
+      padding: 5px 10px;
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .payment-method-icon {
+      width: 30px;
+      height: 30px;
+      font-size: 0.8rem;
+    }
+    
+    .payment-method-name {
+      font-size: 0.9rem;
+    }
+    
+    .payment-method-number {
+      font-size: 0.75rem;
+    }
+    
+    .transaction-details {
+      padding: 12px;
+      font-size: 0.9rem;
+    }
+  }

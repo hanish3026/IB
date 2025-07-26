@@ -1,0 +1,439 @@
+.beneficiary-container {
+  width: 100%;
+  background: var(--primary-text);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.beneficiary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.beneficiary-header h3 {
+  margin: 0;
+  color: var(--primary-colour);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.btn-add-beneficiary {
+  background: var(--mixed-bg);
+  color: var(--primary-text);
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-add-beneficiary:hover {
+  transform: scale(1.05);
+}
+
+.btn-add-beneficiary:active {
+  transform: scale(0.95);
+}
+
+.beneficiary-form {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--primary-colour);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--third-colour);
+  border-radius: 6px;
+  background-color: var(--primary-text);
+  transition: all 0.3s ease;
+}
+
+.form-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath fill='%23495057' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 16px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--primary-colour);
+  box-shadow: 0 0 0 3px rgba(15, 38, 85, 0.1);
+}
+
+.btn-submit {
+  background: var(--mixed-bg);
+  color: var(--primary-text);
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.btn-submit:hover {
+  transform: scale(1.05);
+}
+
+.btn-submit:active {
+  transform: scale(0.95);
+}
+
+.beneficiary-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.beneficiary-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid var(--third-colour);
+  transition: all 0.3s ease;
+}
+
+.beneficiary-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.beneficiary-info h4 {
+  margin: 0 0 1rem 0;
+  color: var(--primary-colour);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.beneficiary-info p {
+  margin: 0.5rem 0;
+  color: var(--secondary-text);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.beneficiary-type {
+  color: var(--primary-colour) !important;
+  font-weight: 500;
+  margin-top: 1rem !important;
+}
+
+.beneficiary-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.btn-select,
+.btn-delete {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-select {
+  background: var(--mixed-bg);
+  color: var(--primary-text);
+  border: none;
+}
+
+.btn-select:hover {
+  transform: scale(1.05);
+}
+
+.btn-delete {
+  background-color: var(--primary-text);
+  color: #dc3545;
+  border: 1px solid #dc3545;
+}
+
+.btn-delete:hover {
+  background-color: #dc3545;
+  color: var(--primary-text);
+  transform: scale(1.05);
+}
+
+.btn-select:active,
+.btn-delete:active {
+  transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .beneficiary-list {
+    grid-template-columns: 1fr;
+  }
+
+  .beneficiary-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .btn-add-beneficiary {
+    width: 100%;
+  }
+
+  .beneficiary-card {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .beneficiary-container {
+    padding: 1rem;
+  }
+
+  .beneficiary-form {
+    padding: 1rem;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .beneficiary-actions {
+    flex-direction: column;
+  }
+}
+
+
+/* Delete confirmation modal styles */
+.delete-confirm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.delete-confirm-modal {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.delete-confirm-modal h4 {
+  margin-top: 0;
+  color: #d9534f;
+}
+
+.delete-confirm-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.btn-cancel {
+  background-color: #f8f9fa;
+  color: #212529;
+  border: 1px solid #dee2e6;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-confirm-delete {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 80px;
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-cancel:hover {
+  background-color: #e2e6ea;
+}
+
+.btn-confirm-delete:hover {
+  background-color: #c9302c;
+}
+
+.btn-cancel:disabled,
+.btn-confirm-delete:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.btn-confirm-delete:disabled {
+  background-color: #c6c6c6;
+  cursor: not-allowed;
+}
+
+/* Success Modal Styles */
+.success-modal {
+  max-width: 500px;
+  width: 90%;
+  background: var(--primary-text);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+.success-modal-icon {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-modal-title {
+  color: var(--primary-colour);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.success-modal-content {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.success-message {
+  color: var(--secondary-text);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.beneficiary-details {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #28a745;
+}
+
+.beneficiary-details p {
+  margin: 0.5rem 0;
+  color: var(--secondary-text);
+  font-size: 0.9rem;
+}
+
+.beneficiary-details strong {
+  color: var(--primary-colour);
+  margin-right: 0.5rem;
+}
+
+.payment-notice {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.payment-notice svg {
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.notice-text {
+  margin: 0;
+  color: #856404;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.notice-text strong {
+  color: #856404;
+}
+
+.success-modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.success-modal-actions .own-btn {
+  min-width: 120px;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design for Success Modal */
+@media (max-width: 576px) {
+  .success-modal {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .success-modal-title {
+    font-size: 1.3rem;
+  }
+  
+  .beneficiary-details {
+    padding: 0.75rem;
+  }
+  
+  .payment-notice {
+    padding: 0.75rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .payment-notice svg {
+    align-self: center;
+    margin-bottom: 0.5rem;
+  }
+}

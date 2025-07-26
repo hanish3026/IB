@@ -1,0 +1,170 @@
+{
+  "billPayment": "Bill Payment",
+  "dashboard": "Dashboard",
+  "paymentCategories": "Payment Categories",
+  "recentPayments": "Recent Payments",
+  "viewAll": "View All",
+  "noRecentPayments": "No recent payments found.",
+  "paid": "Paid",
+  "failed": "Failed",
+  "paymentConfirmation": "Payment Confirmation",
+  
+  "categories": {
+    "electricity": "Electricity",
+    "electricityDesc": "Pay your electricity bills",
+    "electricityLong": "Pay your electricity bills quickly and securely. We support all major electricity providers in the country.",
+    
+    "goverment": "Government Payments",
+    "govermentDesc": "Pay your Government bills",
+    "govermentLong": "Pay your Government bills from the comfort of your home. No more queues or delays.",
+    
+    "internet": "Internet",
+    "internetDesc": "Pay for internet services",
+    "internetLong": "Keep your internet connection active by paying your bills on time. We support all major ISPs.",
+    
+    "mobile": "Mobile",
+    "mobileDesc": "Recharge mobile balance",
+    "mobileLong": "Recharge your mobile phone or pay your postpaid bills instantly. All major telecom providers supported.",
+    
+    "tv": "TV & Cable",
+    "tvDesc": "Pay for TV subscriptions",
+    "tvLong": "Don't miss your favorite shows. Pay your TV subscription bills on time with our secure payment system.",
+    
+    "gas": "Gas",
+    "gasDesc": "Pay your gas bills",
+    "gasLong": "Pay your gas bills securely and instantly. We support all major gas providers in the country."
+  },
+  
+  "providers": {
+    "selectProvider": "Select a Provider",
+    "popularProviders": "Popular Providers",
+    "allProviders": "All Providers",
+    "backToDashboard": "Back to Dashboard"
+  },
+  
+  "form": {
+    "accountNumber": "Account Number",
+    "meterNumber": "Meter Number",
+    "mobileNumber": "Mobile Number",
+    "subscriberId": "Subscriber ID",
+    "smartCardNumber": "Smart Card Number",
+    "consumerNumber": "Consumer Number",
+    "connectionNumber": "Connection Number",
+    "customerId": "Customer ID",
+    
+    "enterAccountNumber": "Enter your account number",
+    "enterMeterNumber": "Enter your 11-digit meter number",
+    "enterMobileNumber": "Enter your 10-digit mobile number",
+    "enterSubscriberId": "Enter your subscriber ID",
+    "enterSmartCardNumber": "Enter your smart card number",
+    "enterConsumerNumber": "Enter your consumer number",
+    "enterConnectionNumber": "Enter your water connection number",
+    "enterCustomerId": "Enter your customer ID",
+    
+    "verifyAccount": "Verify Account",
+    "verifying": "Verifying...",
+    "accountVerified": "Account Verified",
+    "accountNotFound": "Account not found. Please check your account number.",
+    
+    "customerName": "Customer Name",
+    "amount": "Amount",
+    "selectPlan": "Select Plan",
+    "planSelected": "Plan Selected",
+    "email": "Email Address",
+    "phoneNumber": "Phone Number",
+    "saveForLater": "Save for later payments",
+    "nickname": "Nickname (Optional)",
+    
+    "paymentDetails": "Payment Details",
+    "customerInfo": "Customer Information",
+    "billDetails": "Bill Details",
+    "billNumber": "Bill Number",
+    "dueDate": "Due Date",
+    "accountType": "Account Type",
+    "planType": "Plan Type",
+    "connectionType": "Connection Type",
+    "currentPlan": "Current Plan",
+    "accountStatus": "Account Status",
+    "lastRecharge": "Last Recharge",
+    "balance": "Balance",
+    "currentPackage": "Current Package",
+    "smartCardStatus": "Smart Card Status",
+    "expiryDate": "Expiry Date",
+    "accountBalance": "Account Balance",
+    "serviceType": "Service Type",
+    "referenceNumber": "Reference Number",
+    
+    "proceedToPayment": "Proceed to Payment",
+    "back": "Back",
+    "payNow": "Pay Now",
+    "processing": "Processing...",
+    
+    "validation": {
+      "required": "This field is required",
+      "invalidAccountNumber": "Please enter a valid account number",
+      "invalidMobileNumber": "Please enter a valid 10-digit mobile number",
+      "invalidEmail": "Please enter a valid email address",
+      "invalidAmount": "Please enter a valid amount",
+      "minimumAmount": "Minimum amount is TZS 100"
+    }
+  },
+  
+  "plans": {
+    "dailyBundle": "Daily Bundle",
+    "weeklyBundle": "Weekly Bundle",
+    "monthlyBundle": "Monthly Bundle",
+    "basicPackage": "Basic Package",
+    "standardPackage": "Standard Package",
+    "premiumPackage": "Premium Package",
+    "validity": "Validity",
+    "data": "Data",
+    "sms": "SMS",
+    "description": "Description",
+    "channels": "Channels",
+    "features": "Features",
+    "selectThisPlan": "Select This Plan"
+  },
+  
+  "otp": {
+    "enterOtp": "Enter OTP",
+    "otpSent": "We've sent a 6-digit verification code to your registered mobile number",
+    "otpPlaceholder": "Enter 6-digit OTP",
+    "verify": "Verify",
+    "resendOtp": "Resend OTP",
+    "resendIn": "Resend in",
+    "seconds": "seconds",
+    "invalidOtp": "Invalid OTP. Please try again.",
+    "verifyingOtp": "Verifying OTP...",
+    "otpResent": "OTP has been resent successfully!"
+  },
+  
+  "success": {
+    "paymentSuccessful": "Payment Successful!",
+    "paymentProcessed": "Your payment to {{provider}} has been processed successfully.",
+    "transactionId": "Transaction ID",
+    "dateTime": "Date & Time",
+    "amountPaid": "Amount Paid",
+    "status": "Status",
+    "downloadReceipt": "Download Receipt",
+    "backToDashboard": "Back to Dashboard",
+    "receiptDownload": "Receipt download functionality would be implemented here"
+  },
+  
+  "currency": "TZS",
+  "active": "Active",
+  "residential": "Residential",
+  "commercial": "Commercial",
+  "fiber": "Fiber",
+  "dsl": "DSL",
+  "popular": "Popular",
+  "about": "About",
+  "payments": "Payments",
+  "howToPay": "How to pay your",
+  "bill": "bill:",
+  "instructions": {
+    "step1": "Select your service provider from the options above",
+    "step2": "Enter your account/customer number as shown on your bill",
+    "step3": "Enter the amount you wish to pay",
+    "step4": "Confirm payment details and complete the transaction"
+  }
+}

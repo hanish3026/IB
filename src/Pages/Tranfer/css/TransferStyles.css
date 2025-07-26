@@ -1,0 +1,160 @@
+/* Transfer Form Styles */
+.transfer-form {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: var(--bg-primary);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Grid Layout */
+.transfer-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  width: 100%;
+}
+
+/* For single items that should span full width */
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-label {
+  /* display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 0.95rem; */
+}
+
+.form-control {
+  /* width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 1rem; */
+  /* color: var(--text-primary);
+  background-color: var(--input-bg); */
+  transition: all 0.2s ease-in-out;
+}
+
+.form-control:focus {
+  /* border-color: var(--primary-colour);
+  box-shadow: 0 0 0 2px rgba(15, 38, 85, 0.1);
+  outline: none; */
+}
+
+.form-control::placeholder {
+  /* color: var(--text-secondary);
+  opacity: 0.7; */
+}
+
+.form-select {
+  width: 100%;
+  padding: 0.75rem 2rem 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 1rem;
+  color: var(--text-primary);
+  background-color: var(--input-bg);
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+}
+
+/* .btn-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  gap: 0.5rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-colour);
+  color: var(--primary-text);
+} */
+
+/* .btn-primary:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+} */
+
+/* .btn-secondary {
+  background-color: var(--secondary-bg);
+  color: var(--secondary-text);
+} */
+
+/* .btn-secondary:hover {
+  background-color: var(--secondary-hover);
+  transform: translateY(-1px);
+} */
+
+/* Form Validation Styles */
+.form-control.is-invalid {
+  border-color: var(--error-color);
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23dc3545' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3ccircle cx='12' cy='12' r='10'%3e%3c/circle%3e%3cline x1='12' y1='8' x2='12' y2='12'%3e%3c/line%3e%3cline x1='12' y1='16' x2='12.01' y2='16'%3e%3c/line%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1rem;
+  padding-right: 2.5rem;
+}
+
+.invalid-feedback {
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: var(--error-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr; /* Single column on mobile */
+  }
+  
+  .btn-container {
+    flex-direction: column;
+  }
+  
+  /* .btn {
+    width: 100%;
+  } */
+}
+
+@media (min-width: 992px) {
+  .transfer-form {
+    max-width: 900px;
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .transfer-form {
+    max-width: 1000px;
+  }
+}

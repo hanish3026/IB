@@ -1,0 +1,170 @@
+{
+  "billPayment": "دفع الفواتير",
+  "dashboard": "لوحة التحكم",
+  "paymentCategories": "فئات الدفع",
+  "recentPayments": "المدفوعات الأخيرة",
+  "viewAll": "عرض الكل",
+  "noRecentPayments": "لا توجد مدفوعات حديثة.",
+  "paid": "مدفوع",
+  "failed": "فشل",
+  "paymentConfirmation": "تأكيد الدفع",
+  
+  "categories": {
+    "electricity": "الكهرباء",
+    "electricityDesc": "ادفع فواتير الكهرباء",
+    "electricityLong": "ادفع فواتير الكهرباء بسرعة وأمان. ندعم جميع مقدمي خدمات الكهرباء الرئيسيين في البلاد.",
+    
+    "goverment": "المدفوعات الحكومية",
+    "govermentDesc": "ادفع فواتيرك الحكومية",
+    "govermentLong": "ادفع فواتيرك الحكومية من راحة منزلك. لا مزيد من الطوابير أو التأخير.",
+    
+    "internet": "الإنترنت",
+    "internetDesc": "ادفع لخدمات الإنترنت",
+    "internetLong": "حافظ على اتصالك بالإنترنت نشطاً بدفع فواتيرك في الوقت المحدد. ندعم جميع مقدمي خدمات الإنترنت الرئيسيين.",
+    
+    "mobile": "الهاتف المحمول",
+    "mobileDesc": "شحن رصيد الهاتف المحمول",
+    "mobileLong": "اشحن هاتفك المحمول أو ادفع فواتير ما بعد الدفع فوراً. جميع مقدمي خدمات الاتصالات الرئيسيين مدعومون.",
+    
+    "tv": "التلفزيون والكابل",
+    "tvDesc": "ادفع لاشتراكات التلفزيون",
+    "tvLong": "لا تفوت برامجك المفضلة. ادفع فواتير اشتراك التلفزيون في الوقت المحدد مع نظام الدفع الآمن لدينا.",
+    
+    "gas": "الغاز",
+    "gasDesc": "ادفع فواتير الغاز",
+    "gasLong": "ادفع فواتير الغاز بأمان وفوراً. ندعم جميع مقدمي خدمات الغاز الرئيسيين في البلاد."
+  },
+  
+  "providers": {
+    "selectProvider": "اختر مقدم الخدمة",
+    "popularProviders": "مقدمو الخدمة الشائعون",
+    "allProviders": "جميع مقدمي الخدمة",
+    "backToDashboard": "العودة إلى لوحة التحكم"
+  },
+  
+  "form": {
+    "accountNumber": "رقم الحساب",
+    "meterNumber": "رقم العداد",
+    "mobileNumber": "رقم الهاتف المحمول",
+    "subscriberId": "رقم المشترك",
+    "smartCardNumber": "رقم البطاقة الذكية",
+    "consumerNumber": "رقم المستهلك",
+    "connectionNumber": "رقم الاتصال",
+    "customerId": "رقم العميل",
+    
+    "enterAccountNumber": "أدخل رقم حسابك",
+    "enterMeterNumber": "أدخل رقم العداد المكون من 11 رقماً",
+    "enterMobileNumber": "أدخل رقم الهاتف المحمول المكون من 10 أرقام",
+    "enterSubscriberId": "أدخل رقم المشترك",
+    "enterSmartCardNumber": "أدخل رقم البطاقة الذكية",
+    "enterConsumerNumber": "أدخل رقم المستهلك",
+    "enterConnectionNumber": "أدخل رقم اتصال المياه",
+    "enterCustomerId": "أدخل رقم العميل",
+    
+    "verifyAccount": "تحقق من الحساب",
+    "verifying": "جاري التحقق...",
+    "accountVerified": "تم التحقق من الحساب",
+    "accountNotFound": "الحساب غير موجود. يرجى التحقق من رقم الحساب.",
+    
+    "customerName": "اسم العميل",
+    "amount": "المبلغ",
+    "selectPlan": "اختر الخطة",
+    "planSelected": "تم اختيار الخطة",
+    "email": "عنوان البريد الإلكتروني",
+    "phoneNumber": "رقم الهاتف",
+    "saveForLater": "احفظ للدفعات اللاحقة",
+    "nickname": "اسم مستعار (اختياري)",
+    
+    "paymentDetails": "تفاصيل الدفع",
+    "customerInfo": "معلومات العميل",
+    "billDetails": "تفاصيل الفاتورة",
+    "billNumber": "رقم الفاتورة",
+    "dueDate": "تاريخ الاستحقاق",
+    "accountType": "نوع الحساب",
+    "planType": "نوع الخطة",
+    "connectionType": "نوع الاتصال",
+    "currentPlan": "الخطة الحالية",
+    "accountStatus": "حالة الحساب",
+    "lastRecharge": "آخر شحن",
+    "balance": "الرصيد",
+    "currentPackage": "الباقة الحالية",
+    "smartCardStatus": "حالة البطاقة الذكية",
+    "expiryDate": "تاريخ الانتهاء",
+    "accountBalance": "رصيد الحساب",
+    "serviceType": "نوع الخدمة",
+    "referenceNumber": "الرقم المرجعي",
+    
+    "proceedToPayment": "المتابعة للدفع",
+    "back": "رجوع",
+    "payNow": "ادفع الآن",
+    "processing": "جاري المعالجة...",
+    
+    "validation": {
+      "required": "هذا الحقل مطلوب",
+      "invalidAccountNumber": "يرجى إدخال رقم حساب صالح",
+      "invalidMobileNumber": "يرجى إدخال رقم هاتف محمول صالح مكون من 10 أرقام",
+      "invalidEmail": "يرجى إدخال عنوان بريد إلكتروني صالح",
+      "invalidAmount": "يرجى إدخال مبلغ صالح",
+      "minimumAmount": "الحد الأدنى للمبلغ هو 100 شلن تنزاني"
+    }
+  },
+  
+  "plans": {
+    "dailyBundle": "باقة يومية",
+    "weeklyBundle": "باقة أسبوعية",
+    "monthlyBundle": "باقة شهرية",
+    "basicPackage": "الباقة الأساسية",
+    "standardPackage": "الباقة القياسية",
+    "premiumPackage": "الباقة المميزة",
+    "validity": "صالحة لمدة",
+    "data": "البيانات",
+    "sms": "الرسائل النصية",
+    "description": "الوصف",
+    "channels": "القنوات",
+    "features": "المميزات",
+    "selectThisPlan": "اختر هذه الخطة"
+  },
+  
+  "otp": {
+    "enterOtp": "أدخل رمز التحقق",
+    "otpSent": "لقد أرسلنا رمز تحقق مكون من 6 أرقام إلى رقم هاتفك المحمول المسجل",
+    "otpPlaceholder": "أدخل رمز التحقق المكون من 6 أرقام",
+    "verify": "تحقق",
+    "resendOtp": "إعادة إرسال رمز التحقق",
+    "resendIn": "إعادة الإرسال خلال",
+    "seconds": "ثانية",
+    "invalidOtp": "رمز التحقق غير صالح. يرجى المحاولة مرة أخرى.",
+    "verifyingOtp": "جاري التحقق من الرمز...",
+    "otpResent": "تم إعادة إرسال رمز التحقق بنجاح!"
+  },
+  
+  "success": {
+    "paymentSuccessful": "نجح الدفع!",
+    "paymentProcessed": "تمت معالجة دفعتك إلى {{provider}} بنجاح.",
+    "transactionId": "رقم المعاملة",
+    "dateTime": "التاريخ والوقت",
+    "amountPaid": "المبلغ المدفوع",
+    "status": "الحالة",
+    "downloadReceipt": "تحميل الإيصال",
+    "backToDashboard": "العودة إلى لوحة التحكم",
+    "receiptDownload": "سيتم تنفيذ وظيفة تحميل الإيصال هنا"
+  },
+  
+  "currency": "شلن تنزاني",
+  "active": "نشط",
+  "residential": "سكني",
+  "commercial": "تجاري",
+  "fiber": "ألياف بصرية",
+  "dsl": "خط رقمي",
+  "popular": "شائع",
+  "about": "حول",
+  "payments": "المدفوعات",
+  "howToPay": "كيفية دفع فاتورة",
+  "bill": ":",
+  "instructions": {
+    "step1": "اختر مقدم الخدمة من الخيارات أعلاه",
+    "step2": "أدخل رقم حسابك/عميلك كما هو موضح في فاتورتك",
+    "step3": "أدخل المبلغ الذي تريد دفعه",
+    "step4": "أكد تفاصيل الدفع وأكمل المعاملة"
+  }
+}

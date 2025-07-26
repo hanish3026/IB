@@ -1,0 +1,160 @@
+.chatbot-container {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+.message {
+  max-width: 70%;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.message.user {
+  background: var(--primary-colour);
+  color: white;
+  margin-left: auto;
+  border-bottom-right-radius: 4px;
+}
+
+.message.bot {
+  background: white;
+  margin-right: auto;
+  border-bottom-left-radius: 4px;
+}
+
+/* Bot options styling */
+.bot-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.bot-options button {
+  padding: 8px 12px;
+  background: #f0f4f8;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.bot-options button:hover {
+  background: var(--primary-colour);
+  color: white;
+  border-color: var(--primary-colour);
+}
+
+.date-range-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.date-range-picker button {
+  padding: 8px 12px;
+  background: #f0f4f8;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.date-range-picker button:hover {
+  background: var(--primary-colour);
+  color: white;
+  border-color: var(--primary-colour);
+}
+
+.download-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.download-options button {
+  padding: 8px 12px;
+  background: #f0f4f8;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.download-options button:hover {
+  background: var(--primary-colour);
+  color: white;
+  border-color: var(--primary-colour);
+}
+
+.chat-input {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background: white;
+  border-top: 1px solid #eee;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+}
+
+.chat-input button {
+  padding: 0.75rem 1.5rem;
+  background: var(--primary-colour);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .message {
+    max-width: 85%;
+  }
+  
+  .bot-options {
+    flex-direction: column;
+  }
+  
+  .date-range-picker {
+    flex-direction: column;
+  }
+  
+  .download-options {
+    flex-direction: column;
+  }
+}
+
+/* Chat bubble animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.message {
+  animation: fadeIn 0.3s ease-out forwards;
+} 

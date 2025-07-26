@@ -1,0 +1,298 @@
+.internetbankingservices-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    font-family: 'Inter', sans-serif;
+    color: #2d3748;
+    background-color: #f8fafc;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.internetbankingservices-header {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.internetbankingservices-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a365d;
+    margin: 0 0 8px 0;
+}
+
+.internetbankingservices-subtitle {
+    font-size: 16px;
+    color: #4a5568;
+    margin: 0;
+}
+
+.internetbankingservices-search-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.internetbankingservices-search-container {
+    position: relative;
+    width: 100%;
+    max-width: 580px;
+}
+
+.internetbankingservices-search-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #718096;
+    font-size: 18px;
+}
+
+.internetbankingservices-search-input {
+    width: 100%;
+    padding: 16px 16px 16px 46px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.internetbankingservices-search-input:focus {
+    outline: none;
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
+}
+
+.internetbankingservices-category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 32px;
+    justify-content: center;
+}
+
+.internetbankingservices-category-button {
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4a5568;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.internetbankingservices-category-button:hover {
+    background-color: #edf2f7;
+}
+
+.internetbankingservices-category-active {
+    background-color: #3182ce;
+    color: white;
+    border-color: #3182ce;
+}
+
+.internetbankingservices-category-active:hover {
+    background-color: #2c5282;
+}
+
+.internetbankingservices-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.internetbankingservices-service-card {
+    position: relative;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    padding: 24px;
+    overflow: hidden;
+}
+
+.internetbankingservices-service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.08);
+}
+
+.internetbankingservices-service-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(to bottom, #4299e1, #3182ce);
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.internetbankingservices-service-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: #ebf8ff;
+    margin-right: 16px;
+    color: #3182ce;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.internetbankingservices-service-content {
+    flex: 1;
+}
+
+.internetbankingservices-service-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d3748;
+    margin: 0 0 8px 0;
+}
+
+.internetbankingservices-service-description {
+    font-size: 14px;
+    color: #718096;
+    margin: 0 0 12px 0;
+    line-height: 1.5;
+}
+
+.internetbankingservices-service-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: #e6f6ff;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #2b6cb0;
+}
+
+.internetbankingservices-no-results {
+    text-align: center;
+    padding: 40px;
+    color: #718096;
+}
+
+.internetbankingservices-reset-search {
+    margin-top: 16px;
+    padding: 10px 20px;
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.internetbankingservices-reset-search:hover {
+    background-color: #2c5282;
+}
+
+/* Modal styles */
+.internetbankingservices-modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: internetbankingservices-fadeIn 0.3s ease;
+}
+
+.internetbankingservices-modal-wrapper {
+    /* background-color: white;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto; */
+    position: relative;
+    /* animation: internetbankingservices-slideUp 0.4s ease; */
+    /* box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); */
+}
+
+.internetbankingservices-modal-header {
+    padding: 16px;
+    display: flex;
+    justify-content: flex-end;
+    /* border-bottom: 1px solid #e2e8f0; */
+}
+
+.internetbankingservices-modal-close {
+    background: transparent;
+    border: none;
+    color: #a0aec0;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+.internetbankingservices-modal-close:hover {
+    background-color: #f7fafc;
+    color: #4a5568;
+}
+
+.internetbankingservices-modal-body {
+    padding: 24px;
+}
+
+@keyframes internetbankingservices-fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes internetbankingservices-slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .internetbankingservices-category-filters {
+        overflow-x: auto;
+        padding-bottom: 8px;
+        justify-content: flex-start;
+    }
+
+    .internetbankingservices-services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .internetbankingservices-title {
+        font-size: 28px;
+    }
+
+    .internetbankingservices-service-card {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,220 @@
+/* Transfer Result Styles - Success and Failure */
+
+.transfer-success,
+.transfer-failure {
+  /* max-width: 600px; */
+  margin: 0 auto;
+  /* padding: 30px 20px; */
+  text-align: center;
+}
+
+/* Icon Styles */
+.success-icon,
+.failure-icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.success-icon {
+  color: #10b981;
+}
+
+.failure-icon {
+  color: #ef4444;
+}
+
+/* Title and Message */
+.success-title,
+.failure-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.success-title {
+  color: #10b981;
+}
+
+.failure-title {
+  color: #ef4444;
+}
+
+.success-message,
+.failure-message {
+  font-size: 16px;
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+/* Receipt Card */
+.receipt-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.receipt-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f9ff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.receipt-header.failure {
+  background-color: #fef2f2;
+}
+
+.transfer-type-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #3b82f6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.transfer-details h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+  color: #1e293b;
+}
+
+.transfer-details p {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0;
+}
+
+.receipt-details {
+  padding: 20px;
+}
+
+.receipt-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.receipt-row:last-child {
+  border-bottom: none;
+}
+
+.receipt-label {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.receipt-value {
+  font-weight: 500;
+  color: #1e293b;
+  text-align: right;
+}
+
+.receipt-amount {
+  color: #3b82f6;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.receipt-status {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+}
+
+.receipt-status svg {
+  font-size: 14px;
+}
+
+.receipt-status.failure {
+  color: #ef4444;
+}
+
+.error-message {
+  color: #ef4444;
+  font-size: 14px;
+}
+
+/* Transfer Note */
+.transfer-note {
+  background-color: #f8fafc;
+  border-left: 3px solid #3b82f6;
+  padding: 15px;
+  margin-bottom: 30px;
+  text-align: left;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #475569;
+}
+
+/* Action Buttons */
+.success-actions,
+.failure-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.action-btn {
+  flex: 1;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.secondary-btn {
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
+.secondary-btn:hover {
+  background-color: #282a2d1d;
+  color: #475569;
+}
+
+.primary-btn {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: #2563eb;
+}
+success-receipt-icon{
+  color: #10b981;
+}
+/* Responsive Styles */
+@media (max-width: 576px) {
+  .success-actions,
+  .failure-actions {
+    flex-direction: column;
+  }
+  
+  .receipt-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .receipt-value {
+    text-align: left;
+    margin-top: 5px;
+  }
+}

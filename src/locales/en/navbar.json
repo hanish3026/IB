@@ -1,0 +1,11 @@
+{
+  "dashboard": "Dashboard",
+  "account": "Account", 
+  "loan": "Loan",
+  "cards": "Cards",
+  "transfer": "Transfer",
+  "apply": "Apply",
+  "services": "Services",
+  "billpay": "Billpay"
+}
+

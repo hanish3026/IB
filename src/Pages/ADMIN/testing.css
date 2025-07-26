@@ -1,0 +1,78 @@
+/*
+ * testing.css – component-specific styles for AddPaymentMenu
+ * Created: 17 Jul 2025
+ * Use the `.testing-<fieldId>` classes to style individual inputs.
+ */
+
+.add-payment-menu-form {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 2.5rem 2rem;
+  max-width: 400px;
+  margin: 2rem auto;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.add-payment-menu-form label {
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.add-payment-menu-form .testing-fromAccount,
+.add-payment-menu-form .testing-toAccount,
+.add-payment-menu-form .testing-creditAmount,
+.add-payment-menu-form .testing-debitAmount,
+.add-payment-menu-form .testing-description,
+.add-payment-menu-form .testing-purposeCode {
+  width: 100%;
+  padding: 0.6rem 0.9rem;
+  border: 1.5px solid #d2d6dc;
+  border-radius: 6px;
+  margin-bottom: 7px;
+  font-size: 1rem;
+  background: #f9fafb;
+  transition: border 0.2s;
+}
+
+.add-payment-menu-form .testing-fromAccount:focus,
+.add-payment-menu-form .testing-toAccount:focus,
+.add-payment-menu-form .testing-creditAmount:focus,
+.add-payment-menu-form .testing-debitAmount:focus,
+.add-payment-menu-form .testing-description:focus,
+.add-payment-menu-form .testing-purposeCode:focus {
+  border-color: #2563eb;
+  outline: none;
+  background: #fff;
+}
+
+.add-payment-menu-form button[type="submit"] {
+  width: 100%;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem 0;
+  font-size: 1.08rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+
+.add-payment-menu-form button[type="submit"]:hover {
+  background: #1741a6;
+}
+
+.add-payment-menu-form .error-message {
+  color: #e11d48;
+  font-size: 0.93rem;
+  margin-bottom: 5px;
+  margin-top: -2px;
+}
+
+.add-payment-menu-form > div {
+  margin-bottom: 1.4rem;
+}

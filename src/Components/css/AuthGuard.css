@@ -1,0 +1,364 @@
+/* Security Alert Modal Styles */
+.security-alert-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  backdrop-filter: blur(5px);
+  animation: securityOverlayFadeIn 0.3s ease-out;
+  scrollbar-width: none;
+}
+
+.security-alert-modal {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 15px;
+  box-shadow: 
+    0 25px 50px rgba(220, 53, 69, 0.3),
+    0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  border: 2px solid #dc3545;
+  animation: securityModalSlideIn 0.4s ease-out;
+}
+
+.security-alert-header {
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+  color: white;
+  padding: 20px 25px;
+  text-align: center;
+  border-radius: 13px 13px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.security-alert-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  animation: securityShine 2s infinite;
+}
+
+.security-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  display: block;
+  animation: securityIconPulse 1.5s ease-in-out infinite;
+}
+
+.security-alert-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.security-alert-content {
+  padding: 10px 25px;
+  text-align: center;
+}
+
+.warning-icon {
+  font-size: 3rem;
+  color: #ff6b35;
+  margin-bottom: 15px;
+  animation: securityWarningBlink 1s ease-in-out infinite alternate;
+}
+
+.security-alert-content h3 {
+  color: #dc3545;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 15px 0;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.security-alert-content p {
+  color: #495057;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 15px 0;
+}
+
+.security-reasons {
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.security-reasons h4 {
+  color: #dc3545;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+.security-reasons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.security-reasons li {
+  position: relative;
+  padding: 8px 0 8px 25px;
+  color: #495057;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.security-reasons li::before {
+  content: '🔒';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  font-size: 1rem;
+}
+
+.security-action {
+  background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+  border: 2px solid #ffc107;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.logout-message {
+  color: #856404;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0 0 10px 0;
+}
+
+.instruction {
+  color: #856404;
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.security-alert-footer {
+  padding: 20px 25px;
+  text-align: center;
+  background: #f8f9fa;
+  border-radius: 0 0 13px 13px;
+}
+
+.security-alert-btn {
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(220, 53, 69, 0.3);
+}
+
+.security-alert-btn:hover {
+  background: linear-gradient(135deg, #c82333 0%, #b21e2f 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(220, 53, 69, 0.4);
+}
+
+.security-alert-btn:active {
+  transform: translateY(0);
+}
+
+.auto-logout-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #dc3545;
+  font-weight: 600;
+  font-size: 1rem;
+  animation: autoLogoutPulse 1s ease-in-out infinite;
+}
+
+.footer-icon {
+  font-size: 1.2rem;
+  animation: securityIconPulse 1.5s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes securityOverlayFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes securityModalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes securityIconPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes securityWarningBlink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes securityShine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes autoLogoutPulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .security-alert-modal {
+    margin: 20px;
+    max-width: calc(100% - 40px);
+  }
+
+  .security-alert-header {
+    padding: 15px 20px;
+  }
+
+  .security-icon {
+    font-size: 2rem;
+  }
+
+  .security-alert-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .warning-icon {
+    font-size: 2.5rem;
+  }
+
+  .security-alert-content {
+    padding: 20px 15px;
+  }
+
+  .security-alert-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .security-reasons,
+  .security-action {
+    padding: 15px;
+    margin: 15px 0;
+  }
+
+  .security-alert-footer {
+    padding: 15px 20px;
+  }
+
+  .security-alert-btn {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .security-alert-modal {
+    margin: 10px;
+    max-width: calc(100% - 20px);
+  }
+
+  .security-alert-content {
+    padding: 15px 10px;
+  }
+
+  .security-reasons li {
+    font-size: 0.9rem;
+    padding: 6px 0 6px 20px;
+  }
+
+  .security-reasons li::before {
+    font-size: 0.9rem;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .security-alert-modal {
+    border: 3px solid #000;
+  }
+
+  .security-alert-header {
+    background: #000;
+    color: #fff;
+  }
+
+  .security-alert-btn {
+    background: #000;
+    border: 2px solid #fff;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .security-alert-overlay,
+  .security-alert-modal,
+  .security-icon,
+  .warning-icon,
+  .security-alert-btn,
+  .auto-logout-message,
+  .footer-icon {
+    animation: none;
+  }
+
+  .security-alert-btn:hover {
+    transform: none;
+  }
+} 

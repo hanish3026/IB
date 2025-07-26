@@ -1,0 +1,174 @@
+.internet-banking-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    /* padding: 20px 15px; */
+  }
+  
+  .banking-card {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .banking-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  }
+  
+  .banking-title {
+    font-family: var(--font-title);
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a3b5d;
+    margin-bottom: 10px;
+  }
+  
+  .banking-subtitle {
+    font-family: var(--font-title);
+    font-size: 18px;
+    color: #637b92;
+    margin-bottom: 0;
+  }
+  
+  .category-title {
+    font-family: var(--font-title);
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a3b5d;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e6f0f9;
+  }
+  
+  .notes-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .note-item {
+    padding: 14px 0;
+    border-bottom: 1px solid #f0f5fa;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .note-item:last-child {
+    border-bottom: none;
+  }
+  
+  .note-item:hover {
+    background-color: #f8fbff;
+  }
+  
+  .note-content {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .note-icon {
+    flex-shrink: 0;
+    font-size: 20px;
+    color: #3498db;
+    margin-right: 12px;
+    padding-top: 2px;
+  }
+  
+  .note-text {
+    font-family: var(--font-title);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--secondary-text, #4a5568);
+    line-height: 1.6;
+    flex-grow: 1;
+  }
+  
+  .expand-button {
+    background: none;
+    border: none;
+    color: #3498db;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 8px;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .expand-button:hover {
+    background-color: #e6f7ff;
+    text-decoration: underline;
+  }
+  
+  .note-item.expanded .note-text {
+    font-weight: 500;
+  }
+  
+  .help-text {
+    font-family: var(--font-title);
+    font-size: 16px;
+    color: var(--secondary-text, #4a5568);
+    line-height: 1.6;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 992px) {
+    .banking-title {
+      font-size: 24px;
+    }
+    
+    .banking-subtitle {
+      font-size: 16px;
+    }
+    
+    .category-title {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .banking-card {
+      padding: 15px;
+    }
+    
+    .banking-title {
+      font-size: 22px;
+    }
+    
+    .banking-subtitle {
+      font-size: 14px;
+    }
+    
+    .category-title {
+      font-size: 18px;
+    }
+    
+    .note-text {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .internet-banking-container {
+      padding: 10px;
+    }
+    
+    .banking-card {
+      padding: 12px;
+      margin-bottom: 15px;
+    }
+    
+    .banking-title {
+      font-size: 20px;
+    }
+    
+    .note-text {
+      font-size: 13px;
+    }
+    
+    .note-icon {
+      font-size: 16px;
+      margin-right: 8px;
+    }
+  }

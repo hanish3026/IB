@@ -1,0 +1,115 @@
+.update-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: rgba(0, 0, 0, 0.5); */
+  }
+  
+  .update-card {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    /* background: transparent; */
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .update-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Profile Image Upload */
+  .profile-section {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .profile-img-label {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #ddd;
+    overflow: hidden;
+    margin: auto;
+    cursor: pointer;
+  }
+  
+  .profile-img-label input {
+    display: none;
+  }
+  
+  .profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .default-icon {
+    font-size: 50px;
+    margin-top: 20px;
+    color: #888;
+  }
+  
+  /* Form Fields */
+  .form-group {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  /* OTP */
+  .otp-container {
+    margin-top: 15px;
+  }
+  
+  .otp-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .otp-input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    text-align: center;
+  }
+  

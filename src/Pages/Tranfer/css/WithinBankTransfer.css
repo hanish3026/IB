@@ -1,0 +1,293 @@
+/* WithinBankTransfer.css - Specific styles for the Within Bank Transfer component */
+
+.withinBank-container {
+  width: 100%;
+  /* max-width: 900px; */
+  margin: 0 auto;
+  animation: withinBankFadeIn 0.4s ease-out;
+}
+
+.withinBank-form {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.withinBank-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.withinBank-form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.withinBank-form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.withinBank-form-group {
+  margin-bottom: 20px;
+}
+
+.withinBank-form-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #4a5568;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.withinBank-form-select,
+.withinBank-form-input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.withinBank-form-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath fill='%23495057' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 16px;
+  padding-right: 40px;
+}
+
+.withinBank-form-select:focus,
+.withinBank-form-input:focus {
+  outline: none;
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+}
+
+.withinBank-form-input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.withinBank-form-input[type="number"]::-webkit-outer-spin-button,
+.withinBank-form-input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.withinBank-form-helper {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: #718096;
+}
+
+.withinBank-error-input {
+  border-color: #e53e3e !important;
+  background-color: #fff5f5;
+}
+
+.withinBank-error-message {
+  display: block;
+  color: #e53e3e;
+  font-size: 0.8rem;
+  margin-top: 6px;
+}
+
+.withinBank-account-info {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background-color: #f7fafc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.withinBank-account-balance {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.withinBank-amount-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.withinBank-currency-symbol {
+  position: absolute;
+  left: 16px;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.withinBank-form-input[name="amount"] {
+  padding-left: 28px;
+}
+
+.withinBank-form-actions {
+  margin-top: 32px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.withinBank-button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.withinBank-primary {
+  background-color: #3182ce;
+  color: white;
+}
+
+.withinBank-primary:hover {
+  background-color: #2c5282;
+  transform: translateY(-2px);
+}
+
+.withinBank-primary:disabled {
+  background-color: #a0aec0;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.withinBank-secondary {
+  background-color: #edf2f7;
+  color: #4a5568;
+  border: 1px solid #e2e8f0;
+}
+
+.withinBank-secondary:hover {
+  background-color: #e2e8f0;
+  transform: translateY(-2px);
+}
+
+.withinBank-secondary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Confirmation Styles */
+.withinBank-confirmation {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+}
+
+.withinBank-confirmation-details {
+  background-color: #f7fafc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.withinBank-confirmation-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.withinBank-confirmation-row:last-child {
+  border-bottom: none;
+}
+
+.withinBank-confirmation-label {
+  color: #718096;
+  font-size: 0.95rem;
+}
+
+.withinBank-confirmation-value {
+  font-weight: 600;
+  color: #2d3748;
+  text-align: right;
+}
+
+.withinBank-amount {
+  color: #3182ce;
+  font-size: 1.1rem;
+}
+
+.withinBank-confirmation-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.withinBank-processing {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.withinBank-spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #ffffff;
+  animation: withinBankSpin 1s linear infinite;
+}
+
+@keyframes withinBankSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes withinBankFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .withinBank-form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .withinBank-confirmation-row {
+    flex-direction: column;
+  }
+  
+  .withinBank-confirmation-value {
+    text-align: left;
+    margin-top: 4px;
+  }
+  
+  .withinBank-confirmation-actions {
+    flex-direction: column-reverse;
+    gap: 12px;
+  }
+  
+  .withinBank-button {
+    width: 100%;
+  }
+}

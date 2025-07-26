@@ -1,0 +1,304 @@
+/* Main container */
+.payment-menu-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+.payment-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.payment-menu-header h1 {
+    margin: 0;
+    color: #333;
+}
+
+/* Button styling */
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #1890ff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #096dd9;
+}
+
+.btn-secondary {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.btn-secondary:hover {
+    background-color: #d9d9d9;
+}
+
+.btn-edit {
+    background-color: #52c41a;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #389e0d;
+}
+
+.btn-delete {
+    background-color: #ff4d4f;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #cf1322;
+}
+
+/* Table styling */
+.payment-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.payment-table th,
+.payment-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.payment-table th {
+    background-color: #f5f5f5;
+    font-weight: 600;
+}
+
+.payment-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.payment-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Loading spinner */
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 18px;
+    color: #1890ff;
+}
+
+/* Modal styling */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 4px;
+    width: 500px;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #999;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+/* Form styling */
+.payment-form {
+    padding: 24px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #1890ff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+/* Add these styles to your existing CSS file */
+
+/* Status toggle switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 24px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.status-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-text {
+  font-weight: 500;
+}
+
+.inactive-row {
+  opacity: 0.6;
+}
+
+.status-toggle-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.logo-upload-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logo-upload-input {
+    padding: 8px 0;
+}
+
+.logo-preview {
+    margin-top: 10px;
+    border: 1px dashed #ccc;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.logo-preview-image {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: contain;
+}

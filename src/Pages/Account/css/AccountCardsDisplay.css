@@ -1,0 +1,514 @@
+/* Clean Banking Standard Design for Account Cards Display */
+
+/* Container */
+.overAll-Account-deatils-container {
+    /* padding: 2rem;
+    background: rgba(255, 255, 255, 0.95); */
+    /* min-height: 100vh; */
+    font-family: var(--font-title);
+}
+
+/* Main Layout */
+.overAll-Account-deatils-main-layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Left Side - Card Section */
+.overAll-Account-deatils-card-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Navigation */
+.overAll-Account-deatils-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.overAll-Account-deatils-nav-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-colour);
+    background: white;
+    color: var(--primary-colour);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    box-shadow: var(--module-shadow);
+}
+
+.overAll-Account-deatils-nav-btn:hover {
+    background: var(--primary-colour);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Card Wrapper */
+.overAll-Account-deatils-card-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+/* Account Card */
+.overAll-Account-deatils-card {
+    width: 400px;
+    /* height: 240px; */
+    background: var(--mixed-bg);
+    border-radius: 16px;
+    padding: 1.5rem;
+    color: white;
+    box-shadow: var(--module-shadow);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.overAll-Account-deatils-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Header */
+.overAll-Account-deatils-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.overAll-Account-deatils-card-type {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.overAll-Account-deatils-type-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.overAll-Account-deatils-type-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.overAll-Account-deatils-account-type {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 0.25rem 0;
+    color: white;
+}
+
+.overAll-Account-deatils-account-subtitle {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.overAll-Account-deatils-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.5rem 0.75rem;
+    border-radius: 20px;
+}
+
+.overAll-Account-deatils-status-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--module-status-active-text);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+.overAll-Account-deatils-status-text {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: white;
+}
+
+/* Card Body */
+.overAll-Account-deatils-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.overAll-Account-deatils-balance-section {
+    margin-bottom: 1rem;
+}
+
+.overAll-Account-deatils-balance-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin: 0 0 0.5rem 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.overAll-Account-deatils-balance-amount {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.overAll-Account-deatils-account-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.overAll-Account-deatils-info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.overAll-Account-deatils-info-label {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.overAll-Account-deatils-info-value {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+}
+
+/* Indicators */
+.overAll-Account-deatils-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.overAll-Account-deatils-indicator {
+    width: 40px;
+    height: 12px;
+    border-radius: 6px;
+    border: none;
+    background: var(--module-border-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.overAll-Account-deatils-indicator.active {
+    background: var(--primary-colour);
+    transform: scale(1.1);
+}
+
+.overAll-Account-deatils-indicator-dot {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    transition: all 0.3s ease;
+}
+
+/* Right Side - Details Section */
+.overAll-Account-deatils-details-section {
+    background: white;
+    border-radius: 16px;
+    box-shadow: var(--module-shadow);
+    overflow: hidden;
+    height: fit-content;
+    /* min-height: 400px; */
+}
+
+.overAll-Account-deatils-details-header {
+    display: none;  
+    padding: 1.5rem;
+    background: var(--module-bg-light);
+    border-bottom: 1px solid var(--module-border-color);
+}
+
+.overAll-Account-deatils-details-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary-colour);
+    margin: 0 0 0.5rem 0;
+}
+
+.overAll-Account-deatils-details-subtitle {
+    font-size: 0.9rem;
+    color: var(--module-text-secondary);
+    margin: 0;
+}
+
+/* Details Content */
+.overAll-Account-deatils-details-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.overAll-Account-deatils-detail-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: var(--module-bg-light);
+    border-radius: 12px;
+    border-left: 4px solid transparent;
+    transition: all 0.3s ease;
+    gap: 1rem;
+}
+
+.overAll-Account-deatils-detail-item:hover {
+    background: rgba(15, 38, 85, 0.05);
+    border-left-color: var(--primary-colour);
+    transform: translateX(4px);
+}
+
+.overAll-Account-deatils-detail-item.balance {
+    background: var(--module-status-active-bg);
+    border-left-color: var(--module-status-active-text);
+}
+
+.overAll-Account-deatils-detail-item.status {
+    background: var(--module-status-active-bg);
+    border-left-color: var(--module-status-active-text);
+}
+
+.overAll-Account-deatils-detail-icon {
+    width: 45px;
+    height: 45px;
+    background: var(--primary-colour);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.overAll-Account-deatils-detail-icon.balance-icon {
+    background: var(--module-status-active-text);
+}
+
+.overAll-Account-deatils-detail-icon.status-icon {
+    background: var(--module-status-active-text);
+}
+
+.overAll-Account-deatils-detail-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.overAll-Account-deatils-detail-label {
+    font-size: 0.85rem;
+    color: var(--module-text-secondary);
+    font-weight: 500;
+}
+
+.overAll-Account-deatils-detail-value {
+    font-size: 1rem;
+    color: var(--primary-colour);
+    font-weight: 600;
+    word-break: break-all;
+}
+
+.overAll-Account-deatils-detail-value.balance-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--module-status-active-text);
+}
+
+.overAll-Account-deatils-detail-value.status-value {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--module-status-active-text);
+}
+
+.overAll-Account-deatils-status-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--module-status-active-text);
+    animation: pulse 2s infinite;
+}
+
+/* Copy Button */
+.overAll-Account-deatils-copy-btn {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-colour);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.overAll-Account-deatils-copy-btn:hover {
+    background: var(--secondary-colour);
+    transform: scale(1.05);
+}
+
+.overAll-Account-deatils-copy-btn:active {
+    transform: scale(0.95);
+}
+
+/* Animations */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .overAll-Account-deatils-main-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .overAll-Account-deatils-card {
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .overAll-Account-deatils-container {
+        padding: 1rem;
+    }
+    
+    .overAll-Account-deatils-navigation {
+        flex-direction:column-reverse;
+        gap: 1rem;
+    }
+    
+    .overAll-Account-deatils-nav-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+    }
+    
+    .overAll-Account-deatils-card {
+        padding: 1.25rem;
+        height: auto;
+        min-height: 220px;
+    }
+    
+    .overAll-Account-deatils-balance-amount {
+        font-size: 1.7rem;
+    }
+    
+    .overAll-Account-deatils-details-content {
+        padding: 1rem;
+        gap: 0.75rem;
+    }
+    
+    .overAll-Account-deatils-detail-item {
+        padding: 0.75rem;
+    }
+    
+    .overAll-Account-deatils-detail-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .overAll-Account-deatils-copy-btn {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .overAll-Account-deatils-container {
+        padding: 0.75rem;
+    }
+    
+    .overAll-Account-deatils-main-layout {
+        gap: 1.5rem;
+    }
+    
+    .overAll-Account-deatils-card {
+        padding: 1rem;
+        min-height: 200px;
+    }
+    
+    .overAll-Account-deatils-balance-amount {
+        font-size: 1.5rem;
+    }
+    
+    .overAll-Account-deatils-account-type {
+        font-size: 1rem;
+    }
+    
+    .overAll-Account-deatils-details-header {
+        padding: 1rem;
+    }
+    
+    .overAll-Account-deatils-details-title {
+        font-size: 1.1rem;
+    }
+    
+    .overAll-Account-deatils-details-content {
+        padding: 0.75rem;
+    }
+    
+    /* .overAll-Account-deatils-detail-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+        padding: 1rem;
+    }
+     */
+    .overAll-Account-deatils-detail-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    
+    .overAll-Account-deatils-copy-btn {
+        width: 32px;
+        height: 32px;
+        align-self: flex-end;
+    }
+    
+    .overAll-Account-deatils-detail-value {
+        font-size: 0.9rem;
+    }
+    
+    .overAll-Account-deatils-detail-value.balance-value {
+        font-size: 1.1rem;
+    }
+} 

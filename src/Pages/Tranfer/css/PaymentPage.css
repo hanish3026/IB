@@ -1,0 +1,513 @@
+/* Payment Page Styles */
+.payment-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* margin: 20px auto; */
+  position: relative;
+  overflow: hidden;
+  /* max-width: 900px; */
+}
+
+.payment-header {
+  padding: 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.payment-header h2 {
+  margin: 0;
+  color: #2d3748;
+  font-size: 1.5rem;
+}
+
+.step-indicator {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  position: relative;
+}
+
+.step-indicator::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #e2e8f0;
+  z-index: 1;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  width: 25%;
+}
+
+.step-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e2e8f0;
+  color: #718096;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+.step.active .step-number {
+  background-color: #3182ce;
+  color: white;
+}
+
+.step.completed .step-number {
+  background-color: #48bb78;
+  color: white;
+}
+
+.step-label {
+  font-size: 0.85rem;
+  color: #718096;
+  font-weight: 500;
+}
+
+.step.active .step-label {
+  color: #3182ce;
+  font-weight: 600;
+}
+
+.step.completed .step-label {
+  color: #48bb78;
+  font-weight: 600;
+}
+
+.payment-content {
+  padding: 30px;
+}
+
+.payment-step h3 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #2d3748;
+  font-size: 1.25rem;
+}
+
+.payment-types-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.payment-type-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.payment-type-card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.payment-type-card.selected {
+  border-color: #3182ce;
+  background-color: #ebf8ff;
+}
+
+.payment-type-header h4 {
+  margin: 0 0 10px 0;
+  color: #2d3748;
+  font-size: 1rem;
+}
+
+.payment-type-details p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+}
+
+.error-message {
+  color: #e53e3e;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+.schedule-options {
+  display: flex;
+  gap: 15px;
+}
+
+.schedule-option {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.schedule-option:hover {
+  background-color: #f7fafc;
+}
+
+.schedule-option.selected {
+  background-color: #ebf8ff;
+  border-color: #bee3f8;
+  color: #3182ce;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.payment-actions {
+  padding: 20px;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-primary, .btn-secondary, .btn-action {
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-primary {
+  background-color: #3182ce;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #2c5282;
+}
+
+.btn-primary:disabled {
+  background-color: #a0aec0;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background-color: #edf2f7;
+  color: #4a5568;
+  border: 1px solid #e2e8f0;
+}
+
+.btn-secondary:hover {
+  background-color: #e2e8f0;
+}
+
+.btn-secondary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.btn-action {
+  background-color: white;
+  color: #3182ce;
+  border: 1px solid #3182ce;
+  margin-right: 10px;
+}
+
+.btn-action:hover {
+  background-color: #ebf8ff;
+}
+
+/* Review screen styles */
+.review-section {
+  background-color: #f7fafc;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.review-section h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #2d3748;
+  font-size: 1.1rem;
+}
+
+.review-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.review-label {
+  color: #718096;
+  font-weight: 500;
+}
+
+.review-value {
+  color: #2d3748;
+  font-weight: 500;
+}
+
+.review-item.total {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px dashed #e2e8f0;
+}
+
+.review-item.total .review-label,
+.review-item.total .review-value {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.disclaimer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Authentication screen styles */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.otp-section {
+  max-width: 400px;
+  text-align: center;
+}
+
+.mobile-number {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.otp-input {
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.resend-otp {
+  margin-top: 20px;
+}
+
+.resend-otp button {
+  background: none;
+  border: none;
+  color: #3182ce;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Result screen styles */
+.result-screen {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.result-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.result-icon.success {
+  color: #48bb78;
+}
+
+.result-icon.failure {
+  color: #e53e3e;
+}
+
+.success-text {
+  color: #48bb78;
+}
+
+.failure-text {
+  color: #e53e3e;
+}
+
+.transaction-details {
+  max-width: 500px;
+  margin: 30px auto;
+  background-color: #f7fafc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.transaction-label {
+  color: #718096;
+  font-weight: 500;
+}
+
+.transaction-value {
+  color: #2d3748;
+  font-weight: 500;
+}
+
+.failure-message {
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: left;
+  color: #e53e3e;
+}
+
+.result-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+/* Processing overlay */
+.processing-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.processing-content {
+  text-align: center;
+}
+
+.processing-content p {
+  margin-top: 15px;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+/* Error screen */
+.payment-error {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.payment-error h3 {
+  color: #e53e3e;
+  margin-bottom: 15px;
+}
+
+.payment-error button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #3182ce;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Layout loader */
+.layout-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .payment-types-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .payment-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .payment-actions button {
+    width: 100%;
+  }
+  
+  .result-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .result-actions button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-content {
+    padding: 20px;
+  }
+  
+  .step-indicator {
+    margin-top: 15px;
+  }
+  
+  .step-number {
+    width: 24px;
+    height: 24px;
+    font-size: 0.8rem;
+  }
+  
+  .step-label {
+    font-size: 0.7rem;
+  }
+}

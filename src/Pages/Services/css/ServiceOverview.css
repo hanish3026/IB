@@ -1,0 +1,80 @@
+.service-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    width: 100%;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .services-icon{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    background-color: var(--primary-colour);
+  }
+  
+  .service-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--primary-colour);
+  }
+  
+  .service-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .service-category-tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    background: rgba(var(--primary-colour-rgb), 0.1);
+    color: var(--primary-colour);
+  }
+  
+  .service-search .input-group-text {
+    background: white;
+    border-right: none;
+  }
+  
+  .service-search .form-control {
+    border-left: none;
+  }
+  
+  .service-search .form-control:focus {
+    box-shadow: none;
+    border-color: #ced4da;
+  }
+  
+  .service-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .service-categories {
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      padding-bottom: 0.5rem;
+    }
+    
+    .service-categories::-webkit-scrollbar {
+      height: 4px;
+    }
+    
+    .service-categories::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+    }
+  }

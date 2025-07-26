@@ -1,0 +1,102 @@
+.form-section {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.confirmation-section {
+  margin-bottom: 2rem;
+}
+
+.confirm-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.confirm-checkbox input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.success-section {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.success-icon {
+  font-size: 3rem;
+  color: #16a34a;
+  margin-bottom: 1rem;
+}
+
+.success-details {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.success-details p {
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.success-details p:last-child {
+  border-bottom: none;
+}
+
+.success-note {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.notice-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: #fff8e7;
+  border-radius: 8px;
+  color: #92400e;
+}
+
+.notice-icon {
+  font-size: 1.25rem;
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 768px) {
+  .form-section {
+    padding: 1rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .success-section {
+    padding: 2rem 1rem;
+  }
+
+  .success-details {
+    padding: 1rem;
+  }
+}

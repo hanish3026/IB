@@ -1,0 +1,145 @@
+:root {
+  --primary-color: #2563eb;
+  --primary-hover: #1d4ed8;
+  --secondary-color: #f1f5f9;
+  --border-color: #e2e8f0;
+  --text-color: #1e293b;
+  --light-text: #64748b;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+.faq-container {
+  max-width: 100%;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.faq-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.search-container {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 1.25rem 3rem 1.25rem 1.5rem;
+  border-radius: 12px;
+  border: 2px solid var(--border-color);
+  font-size: 1.1rem;
+  background-color: var(--secondary-color);
+  transition: var(--transition);
+}
+
+.search-input:focus {
+  border-color: var(--primary-color);
+  background-color: white;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+.accordion-item {
+  margin-bottom: 1.25rem;
+  border: none;
+  border-radius: 12px;
+  background: white;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.accordion-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.accordion-button {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: white;
+  transition: var(--transition);
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--secondary-color);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.Qn {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.accordion-button:after {
+  /* content: "+"; */
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+.accordion-button:not(.collapsed):after {
+  transform: rotate(45deg);
+}
+
+.accordion-body {
+  padding: 1.5rem;
+  line-height: 1.8;
+  color: var(--light-text);
+  font-size: 1.05rem;
+}
+
+.contact-help {
+  margin-top: 4rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+  border-radius: 12px;
+  color: white;
+}
+
+.contact-help a {
+  color: white;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.contact-help a:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .Qn {
+    font-size: 16px;
+  }
+  
+  .accordion-button {
+    padding: 1rem;
+  }
+  
+  .accordion-body {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Qn {
+    font-size: 14px;
+  }
+  
+  .accordion-button:after {
+    font-size: 18px;
+  }
+}

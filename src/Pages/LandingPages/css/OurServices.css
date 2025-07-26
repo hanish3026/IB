@@ -1,0 +1,205 @@
+/* Container and Wrappers */
+.landingpageService-wrapper {
+  padding: 80px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.landingpageService-header {
+  margin-bottom: 50px;
+}
+
+.landingpageService-container {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--primary-text);
+  display: flex;
+  margin-top: 20px;
+  border-radius: 20px;
+  background: var(--mixed-bg);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Title and Descriptions */
+.landingpageService-subheading {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--third-colour);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.landingpageService-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--primary-text);
+  position: relative;
+}
+
+.landingpageService-description {
+  font-size: 1.1rem;
+  margin: 0 auto 30px;
+  color: var(--secondary-text);
+  line-height: 1.6;
+}
+
+/* Filter Tabs */
+.landingpageService-filter {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.landingpageService-filter-btn {
+  padding: 12px 24px;
+  background: var(--secondary-colour);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: var(--primary-text);
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.landingpageService-filter-btn:hover {
+  transform: translateY(-2px);
+  background: var(--mixed-bg);
+}
+
+.landingpageService-filter-btn.active {
+  background: var(--third-colour);
+  color: var(--primary-text);
+}
+
+/* Services Section */
+.landingpageService-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  width: 100%;
+}
+
+/* Card Styles */
+.landingpageService-card {
+  perspective: 1000px;
+  height: 320px;
+  cursor: pointer;
+  position: relative;
+}
+
+.landingpageService-front,
+.landingpageService-back {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  padding: 2rem;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.landingpageService-front {
+  background: var(--secondary-colour);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.landingpageService-back {
+  background: var(--third-colour);
+  transform: rotateY(180deg);
+}
+
+.landingpageService-card.flipped .landingpageService-front {
+  transform: rotateY(180deg);
+}
+
+.landingpageService-card.flipped .landingpageService-back {
+  transform: rotateY(0);
+}
+
+/* Icon Styles */
+.landingpageService-icon {
+  width: 70px;
+  height: 70px;
+  background: var(--mixed-bg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.landingpageService-icon-style {
+  font-size: 1.75rem;
+  color: var(--third-colour);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .landingpageService-wrapper {
+    padding: 60px 20px;
+  }
+
+  .landingpageService-section {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .landingpageService-wrapper {
+    padding: 40px 15px;
+  }
+
+  .landingpageService-title {
+    font-size: 2rem;
+  }
+
+  .landingpageService-container {
+    padding: 20px 15px;
+  }
+
+  .landingpageService-section {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 15px;
+    padding-bottom: 20px;
+  }
+
+  .landingpageService-card {
+    flex: 0 0 280px;
+    scroll-snap-align: start;
+  }
+
+  .landingpageService-filter-btn {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .landingpageService-wrapper {
+    padding: 30px 10px;
+  }
+
+  .landingpageService-title {
+    font-size: 1.75rem;
+  }
+
+  .landingpageService-description {
+    font-size: 0.9rem;
+  }
+
+  .landingpageService-card {
+    flex: 0 0 260px;
+    height: 300px;
+  }
+
+  .landingpageService-icon {
+    width: 60px;
+    height: 60px;
+  }
+}

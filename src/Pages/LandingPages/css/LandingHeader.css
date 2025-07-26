@@ -1,0 +1,27 @@
+.header-title{
+    font-family: var(--font-title);
+    color: var(--primary-text);
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+.background{
+    background-color: var(--primary-colour);
+    color: var(--primary-text);
+    height: 100px;
+    display: grid;
+}
+h2{
+    font-family: var(--font-title);
+}
+
+@media (max-width:768px) {
+    .background{
+        height: 60px;
+    }
+    .header-title{
+        color: var(--primary-text);
+        font-size: 10px;
+        font-weight: 900;
+      }
+}

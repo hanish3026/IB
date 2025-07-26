@@ -1,0 +1,159 @@
+/* Global styles */
+.loan-container {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  background: #121212;
+}
+
+/* Loan section */
+.loan-section {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 1000px;
+  overflow-x: scroll;
+}
+
+/* Loan Card with Flip Effect */
+.loan-card {
+  perspective: 1000px;
+  width: 180px;
+  height: 200px;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.loan-card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Card Front */
+.card-front, .card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Front Side */
+.card-front {
+  background: linear-gradient(135deg, #1e1e1e, #272727);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.loan-icon {
+  font-size: 30px;
+  color: #00ffcc;
+}
+
+.loan-title {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* Back Side */
+.card-back {
+  background: #282828;
+  transform: rotateY(180deg);
+  padding: 10px;
+}
+
+.loan-content {
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.loan-button {
+  padding: 5px 10px;
+  border: none;
+  background: #00ffcc;
+  color: #121212;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background 0.3s ease-in-out;
+  font-size: 12px;
+}
+
+.loan-button:hover {
+  background: #00cca3;
+}
+
+/* Mobile View - Horizontal Scroll */
+@media (max-width: 768px) {
+  .loan-section {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    padding: 10px;
+  }
+
+  .loan-card {
+    flex: 0 0 auto;
+    width: 140px;
+    height: 160px;
+    margin: 5px;
+  }
+
+  .loan-icon {
+    font-size: 24px;
+  }
+
+  .loan-title {
+    font-size: 12px;
+  }
+
+  .loan-content {
+    font-size: 10px;
+  }
+
+  .loan-button {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+}
+
+/* Smaller Mobile Devices */
+@media (max-width: 480px) {
+  .loan-card {
+    width: 120px;
+    height: 140px;
+  }
+
+  .loan-icon {
+    font-size: 20px;
+  }
+
+  .loan-title {
+    font-size: 10px;
+  }
+
+  .loan-content {
+    font-size: 9px;
+  }
+
+  .loan-button {
+    font-size: 9px;
+    padding: 3px 6px;
+  }
+}

@@ -1,0 +1,212 @@
+/* Success Screen Styles */
+.success-screen {
+    padding: 2rem;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 12px;
+  }
+  
+  .success-animation {
+    margin-bottom: 2rem;
+  }
+  
+  .checkmark-circle {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(145deg, #e8f5e9, #4caf50);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    animation: scaleIn 0.3s ease-in-out;
+  }
+  
+  .checkmark-circle i {
+    color: white;
+    font-size: 2rem;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .success-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .success-title {
+    color: #2e7d32;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .success-message {
+    color: #64748b;
+    margin-bottom: 2rem;
+  }
+  
+  .success-details {
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .success-detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .success-detail-item:last-child {
+    border-bottom: none;
+  }
+  
+  .detail-label {
+    color: #64748b;
+    font-size: 0.875rem;
+  }
+  
+  .detail-value {
+    color: #1a202c;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .detail-value.highlight {
+    color: #2e7d32;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .detail-value i {
+    color: #64748b;
+  }
+  
+  .success-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .success-actions button {
+    min-width: 200px;
+  }
+  
+  .success-footer {
+    margin-top: 2rem;
+  }
+  
+  .success-note {
+    background: #f1f5f9;
+    padding: 1rem;
+    border-radius: 8px;
+    color: #64748b;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Animations */
+  @keyframes scaleIn {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .success-screen {
+      padding: 1.5rem;
+    }
+  
+    .success-actions {
+      flex-direction: column;
+    }
+  
+    .success-actions button {
+      width: 100%;
+    }
+  
+    .success-detail-item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  
+    .detail-value {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  }
+
+  /* Progress Bar Styles */
+  .loan-progress-container {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .loan-progress-bar {
+    height: 8px;
+    background-color: #e2e8f0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .loan-progress-fill {
+    height: 100%;
+    background: linear-gradient(135deg, var(--loan-primary-color), var(--loan-accent-color));
+    border-radius: 4px;
+    transition: width 0.5s ease;
+  }
+  
+  .loan-progress-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: var(--loan-text-secondary);
+    margin-top: 4px;
+  }
+  
+  /* Amount styling */
+  .loan-payment-amount.amount-negative {
+    color: var(--loan-danger-color);
+  }
+  
+  .loan-payment-amount.amount-positive {
+    color: var(--loan-success-color);
+  }
+  
+  /* Make sure the loan cards have proper spacing */
+  .loan-balance-card {
+    margin-bottom: 16px;
+  }
+  
+  /* Responsive adjustments for progress bars */
+  @media (max-width: 576px) {
+    .loan-progress-bar {
+      height: 6px;
+    }
+    
+    .loan-progress-info {
+      font-size: 0.7rem;
+    }
+  }
