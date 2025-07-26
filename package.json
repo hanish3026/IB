@@ -2,7 +2,7 @@
   "name": "ib",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/ib",
+  "homepage": "https://hanish3026.github.io/IB",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
@@ -38,7 +38,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -60,6 +62,7 @@
   },
   "devDependencies": {
     "@craco/craco": "^7.1.0",
+    "gh-pages": "^6.3.0",
     "webpack-obfuscator": "^3.5.1"
   }
 }
