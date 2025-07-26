@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/IB/static/css/main.d77dd910.css",
+    "main.js": "/IB/static/js/main.91ab8989.js",
+    "static/media/card3d.PNG": "/IB/static/media/card3d.bcc32ea0acbe6fa95218.PNG",
+    "static/media/AD4.jpg": "/IB/static/media/AD4.bda2035bd68f2d1015de.jpg",
+    "static/media/kkc45r45.png": "/IB/static/media/kkc45r45.95bfe5fc58aa996e6037.png",
+    "static/media/image 1.png": "/IB/static/media/image 1.3262b271a3968400f5cb.png",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/IB/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/Screenshot 2025-02-04 180205.png": "/IB/static/media/Screenshot 2025-02-04 180205.d70b4b7e7f86061c1fd0.png",
+    "static/media/5096154.jpg": "/IB/static/media/5096154.3cdcd4fa54bfe048434f.jpg",
+    "static/media/fontawesome-webfont.eot": "/IB/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/IB/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/IB/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/IB/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/Media1.jfif": "/IB/static/media/Media1.dc7255df0472a3435e9d.jfif",
+    "static/media/Image.jpg": "/IB/static/media/Image.880afcdaf91883f8e9ea.jpg",
+    "static/media/Media.jfif": "/IB/static/media/Media.a9bbe7cd582af782f0b1.jfif",
+    "static/media/Media2.jfif": "/IB/static/media/Media2.d5349b83fbff8e70bcf7.jfif",
+    "static/media/loginImg.jpg": "/IB/static/media/loginImg.4d45b8ee8b7141fd146e.jpg",
+    "static/media/logo.jpg": "/IB/static/media/logo.4929a4fb0babc5efaa4d.jpg",
+    "static/media/Ad7.jfif": "/IB/static/media/Ad7.4873d0a8c4242e702b3e.jfif",
+    "static/media/Ad6.jfif": "/IB/static/media/Ad6.8a08bac30f7ebfb6a577.jfif",
+    "static/media/secrity.png": "/IB/static/media/secrity.d6a4d595376ef5f6c162.png",
+    "static/media/bank.png": "/IB/static/media/bank.316ac758fc555a8b1ff2.png",
+    "static/media/Ad5.jfif": "/IB/static/media/Ad5.ab2b3de6fad95e1f3d97.jfif",
+    "static/media/tigo.webp": "/IB/static/media/tigo.8b1135f3e5ccacab9344.webp",
+    "static/media/profileimg.jfif": "/IB/static/media/profileimg.be8ff427d9c74b7c08be.jfif",
+    "static/media/dstv.jfif": "/IB/static/media/dstv.a40aa09ef37a97439bfe.jfif",
+    "index.html": "/IB/index.html",
+    "static/media/wave.svg": "/IB/static/media/wave.edeeab27d50cc11ea56e6efcbae17f69.svg",
+    "main.d77dd910.css.map": "/IB/static/css/main.d77dd910.css.map",
+    "main.91ab8989.js.map": "/IB/static/js/main.91ab8989.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d77dd910.css",
+    "static/js/main.91ab8989.js"
+  ]
+}
